@@ -1,0 +1,33 @@
+# Testing order in states
+java -ea ataxx.Main
+
+block a6
+a7-b7
+
+block a5
+# @<cannot block at this time.
+
+clear
+
+manual blue
+start
+
+block a4
+# @<'block' command is not allowed now.
+
+clear
+
+block a3
+
+dump
+@<===
+@<  r - - - - - b
+@<  - - - - - - -
+@<  X - - - - - X
+@<  - - - - - - -
+@<  X - - - - - X
+@<  - - - - - - -
+@<  b - - - - - r
+@<===
+
+quit

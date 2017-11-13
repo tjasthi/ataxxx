@@ -1,0 +1,66 @@
+# Testing AI for straightforward move
+java -ea ataxx.Main
+
+block a6
+block a5
+block a4
+block b7
+block b6
+block b5
+block b4
+block c7
+block c6
+block d7
+
+a7-c5
+g7-e5
+g1-e3
+a1-c3
+c5-d6
+c3-d2
+c5-a7
+e3-g1
+e5-g7
+c3-a1
+dump
+@<===
+@<  r X X X X X r
+@<  X X X r X X X
+@<  X X - - - X X
+@<  X X - - - X X
+@<  X X - - - X X
+@<  X X X b X X X
+@<  b X X X X X b
+@<===
+
+d6-d5
+d2-d3
+d5-c5
+d3-e3
+c5-c4
+e3-e4
+c4-e5
+d2-c3
+e4-c4
+e3-e4
+
+dump
+@<===
+@<  r X X X X X r
+@<  X X X r X X X
+@<  X X r b b X X
+@<  X X r - b X X
+@<  X X r b b X X
+@<  X X X b X X X
+@<  b X X X X X b
+@<===
+
+auto red
+start
+
+@<Red moves d6-d4.
+@<Blue passes.
+@<Red moves e5-d6.
+@<Red wins.
+
+quit

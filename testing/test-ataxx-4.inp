@@ -1,0 +1,64 @@
+# Testing pass
+java -ea ataxx.Main
+
+block d4
+block d3
+block d2
+block d1
+block c4
+block c3
+block c2
+block c1
+block b4
+block b3
+block b2
+block b1
+
+a7-a5
+g7-g5
+a5-a4
+g5-g7
+a4-a3
+g7-g5
+a3-a2
+
+g5-g7
+g1-g3
+g7-g6
+
+manual blue
+start
+dump
+@<===
+@<  - X X X X X b
+@<  - X X X X X b
+@<  r X X X X X -
+@<  r X X X X X -
+@<  r X X X X X r
+@<  r X X X X X -
+@<  r X X X X X -
+@<===
+
+g3-g4
+g6-g5
+g3-g2
+pass
+g2-g1
+pass
+a5-a6
+pass
+a6-a7
+@<Red wins.
+
+dump
+@<===
+@<  r X X X X X b
+@<  r X X X X X b
+@<  r X X X X X b
+@<  r X X X X X b
+@<  r X X X X X r
+@<  r X X X X X r
+@<  r X X X X X r
+@<===
+
+quit
